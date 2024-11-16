@@ -4,12 +4,21 @@
     Layout = "~/Views/Shared/_SiteLayout.cshtml";
 }
 <div class="container">
-    <div class="col-md-12">
-        <h4>Kurumsal Web Hakkında</h4>
-        <img src="~/Content/SiteLayout/img/dummies/dummy-1.jpg" alt="" class="align-center img-box img-responsive" />
-        <p>
-            @Html.Raw(Model.Aciklama)
-        </p>
+   
+    <br/>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Model.ResimURL" alt="" class="align-center img-box img-responsive" />
+        </div>
+        <div class="col-md-6">
+            <h4>Hakkımızda</h4>
+            <p>
+                @if (Model.Aciklama != null)
+                {
+                    @Html.Raw(Model.Aciklama)
+                }
+            </p>
+        </div>
     </div>
 </div>
 

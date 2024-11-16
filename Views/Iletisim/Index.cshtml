@@ -31,36 +31,45 @@
         <th>
             @Html.DisplayNameFor(model => model.Instagram)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MapsEmbedSrc)
+        </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Adres)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Telefon)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Fax)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Whatsapp)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Facebook)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Twitter)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Instagram)
-        </td>
-        <td>
-            @Html.ActionLink("Güncelle", "Edit", new { id=item.IletisimId }) 
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Whatsapp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Facebook)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Twitter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Instagram)
+            </td>
+            <td>
+                @(item.MapsEmbedSrc?.Length > 20
+        ? item.MapsEmbedSrc.Substring(0, 20) + "..."
+        : item.MapsEmbedSrc)
+            </td>
+            <td>
+                @Html.ActionLink("Güncelle", "Edit", new { id = item.IletisimId })
+            </td>
+        </tr>
+    }
 
 </table>

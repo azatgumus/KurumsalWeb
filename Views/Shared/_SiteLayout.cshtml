@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - @ViewBag.Kimlik.Title</title>
     <meta name="description" content="@Html.Raw(ViewBag.Kimlik.Description)" />
-    <meta name="keywords"  content="@ViewBag.Kimlik.Keywords"/>
+    <meta name="keywords" content="@ViewBag.Kimlik.Keywords" />
 
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
     <meta charset="utf-8">
-
 
 
     <!-- css -->
@@ -23,13 +22,10 @@
     <!-- Theme skin -->
     <link href="/Content/SiteLayout/skins/default.css" rel="stylesheet" />
 
-    <!-- =======================================================
-    Theme Name: Moderna
-    Theme URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-    ======================================================= -->
 
+    <!-- Sayfaya özel stil eklemek için -->
+    @RenderSection("Styles", required: false)
+    @RenderSection("scripts", false)
 </head>
 <body>
 
@@ -45,23 +41,14 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="">@*<span>K</span>urumsalWeb*@<img src="@ViewBag.Kimlik.LogoURL" height="30" width="75" /> @ViewBag.Kimlik.Unvan</a>
+                        <a class="navbar-brand" href=""><img src="@ViewBag.Kimlik.LogoURL"  alt="Logo"/></a>
                     </div>
                     <div class="navbar-collapse collapse ">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="/Anasayfa">Ana Sayfa</a></li>
-                            @*<li class="dropdown">
-                                    <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Hakkımızda <b class=" icon-angle-down"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="/Home/Hakkimizda/">Hakkımızda</a></li>
-                                        <li><a href="/Home/Hizmetlerimiz/">Hizmetlerimiz</a></li>
-                                        <li><a href="pricingbox.html">Pricing box</a></li>
-                                    </ul>
-                                </li>*@
-                            <li><a href="/Hakkimizda/" />Hakkımızda</a></li>
-                            <li><a href="/Hizmetlerimiz" />Hizmetlerimiz</a></li>
-                            <li><a href="/BlogPost/">Blog</a></li>
-                            <li><a href="/iletisim/">İletişim</a></li>
+                            <li><a href="/Hizmetlerimiz" />HİZMETLERİMİZ</a></li>
+                            <li><a href="/Hakkimizda/" />HAKKIMIZDA</a></li>
+                            <li><a href="/iletisim/">İLETİŞİM</a></li>
                         </ul>
                     </div>
                 </div>
@@ -71,20 +58,17 @@
         <div class="container">
             @RenderBody()
         </div>
-        
-     
-           
-                @{
-                    Html.RenderAction("FooterPartial", "Home");
-                }
-            
-           
-        
-        
+
+
+
+        @{
+            Html.RenderAction("FooterPartial", "Home");
+        }
+
     </div>
 
 
-    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>ssss
     <!-- javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

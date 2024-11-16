@@ -128,7 +128,7 @@
                         </a>
                         <ul class="dropdown-menu extended logout">
                             <div class="log-arrow-up"></div>
-                            @{if (Session["yetki"].ToString() == "Admin")
+                            @{if (Session["yetki"]?.ToString() == "Admin")
                                 {
                                     <li>
                                         <a href="/Admin/Adminler/"><i class="icon_key_alt"></i> Adminler</a>
@@ -160,7 +160,7 @@
                             <span>Admin Özet</span>
                         </a>
                     </li>
-                    @{if (Session["yetki"].ToString() == "Admin")
+                    @{if (Session["yetki"]?.ToString() == "Admin")
                         {
                             <li>
                                 <a class="" href="/Kimlik/Index/">

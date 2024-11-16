@@ -121,7 +121,6 @@ header .navbar {
     font-weight: 700;
     line-height: 1em;
 	letter-spacing: -1px;
-    margin-top: 30px;
     padding: 0 0 0 15px;
 }
 
@@ -183,7 +182,11 @@ header  .navbar-nav > li > a {
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
-
+.navbar-brand img {
+	height: 90px;
+	width: auto;
+	display: inline-block;
+}
 
 .dropdown-menu li a:hover {
     color: #fff !important;

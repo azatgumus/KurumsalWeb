@@ -46,7 +46,7 @@ namespace KurumsalWeb.Controllers
                     FileInfo imginfo = new FileInfo(LogoURL.FileName);
 
                     string logoname = LogoURL.FileName + imginfo.Extension;
-                    img.Resize(300, 200);
+                    img.Resize(100, 100);
                     img.Save("~/Uploads/Kimlik/"+logoname);
 
                     k.LogoURL = "/Uploads/Kimlik/" + logoname;

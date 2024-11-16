@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace KurumsalWeb.Models.Model
     {
         [Key]
         public int IletisimId { get; set; }
-        [StringLength(250,ErrorMessage ="250 karekter olmalıdır")]
+        [StringLength(250, ErrorMessage = "250 karekter olmalıdır")]
         public string Adres { get; set; }
         [StringLength(250, ErrorMessage = "250 karekter olmalıdır")]
         public string Telefon { get; set; }
@@ -21,5 +22,7 @@ namespace KurumsalWeb.Models.Model
         public string Facebook { get; set; }
         public string Twitter { get; set; }
         public string Instagram { get; set; }
+        [DisplayName("Google Maps Yerleştirme Linki")]
+        public string MapsEmbedSrc { get; set; }
     }
 }

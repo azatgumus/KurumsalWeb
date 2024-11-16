@@ -19,14 +19,14 @@ namespace KurumsalWeb.Controllers
         {
             return View(db.Hizmet.ToList());
         }
-        
+
         public ActionResult Create()
         {
             return View();
         }
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult Create(Hizmet hizmet,HttpPostedFileBase ResimURL)
+        public ActionResult Create(Hizmet hizmet, HttpPostedFileBase ResimURL)
         {
             if (ModelState.IsValid)
             {
@@ -51,12 +51,12 @@ namespace KurumsalWeb.Controllers
 
         public ActionResult Edit(int? id)
         {
-            if (id==null)
+            if (id == null)
             {
                 ViewBag.Uyari = "Güncellenecek Hizmet Bulunamadı";
             }
             var hizmet = db.Hizmet.Find(id);
-            if (hizmet==null)
+            if (hizmet == null)
             {
                 return HttpNotFound();
             }
@@ -65,12 +65,12 @@ namespace KurumsalWeb.Controllers
         }
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult Edit(int? id,Hizmet hizmet,HttpPostedFileBase ResimURL)
+        public ActionResult Edit(int? id, Hizmet hizmet, HttpPostedFileBase ResimURL)
         {
             if (ModelState.IsValid)
             {
                 var h = db.Hizmet.Where(x => x.HizmetId == id).SingleOrDefault();
-                if (ResimURL!=null)
+                if (ResimURL != null)
                 {
                     if (System.IO.File.Exists(Server.MapPath(h.ResimURL)))
                     {
@@ -96,19 +96,19 @@ namespace KurumsalWeb.Controllers
         }
         public ActionResult Delete(int id)
         {
-            if (id==null)
+            if (id == null)
             {
                 return HttpNotFound();
             }
             var h = db.Hizmet.Find(id);
-            if (h==null)
+            if (h == null)
             {
                 return HttpNotFound();
             }
             db.Hizmet.Remove(h);
             db.SaveChanges();
             return RedirectToAction("Index");
-          
+
         }
     }
 }

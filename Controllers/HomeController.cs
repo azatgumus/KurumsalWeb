@@ -17,19 +17,19 @@ namespace KurumsalWeb.Controllers
         // GET: Home
         [Route("")]
         [Route("Anasayfa")]
-        
+
         public ActionResult Index()
         {
             ViewBag.Kimlik = db.Kimlik.SingleOrDefault();
 
-            ViewBag.Hizmetler = db.Hizmet.ToList().OrderByDescending(x=>x.HizmetId);
+            ViewBag.Hizmetler = db.Hizmet.ToList().OrderByDescending(x => x.HizmetId);
 
             return View();
         }
 
         public ActionResult SliderPartial()
         {
-            return View(db.Slider.ToList().OrderByDescending(x=>x.SliderId));
+            return View(db.Slider.ToList().OrderByDescending(x => x.SliderId));
         }
 
         public ActionResult HizmetPartial()
@@ -41,27 +41,38 @@ namespace KurumsalWeb.Controllers
         {
 
             ViewBag.Kimlik = db.Kimlik.SingleOrDefault();
-            return View(db.Hakkimizda.SingleOrDefault());
+            return View(db.Hakkimizda.FirstOrDefault());
         }
         [Route("Hizmetlerimiz")]
         public ActionResult Hizmetlerimiz()
         {
             ViewBag.Kimlik = db.Kimlik.SingleOrDefault();
-            return View(db.Hizmet.ToList().OrderByDescending(x=>x.HizmetId));
+            return View(db.Hizmet.ToList().OrderByDescending(x => x.HizmetId));
         }
-        
-        [Route("iletisim")]      
+
+
+        public ActionResult HizmetDetay(int id)
+        {
+            ViewBag.Kimlik = db.Kimlik.SingleOrDefault();
+            var hizmetler = db.Hizmet.ToList();
+            ViewBag.Hizmetler = hizmetler;
+            var b = hizmetler.FirstOrDefault(x => x.HizmetId == id);
+            return View(b);
+        }
+
+        [Route("iletisim")]
         public ActionResult Iletisim()
         {
             ViewBag.Kimlik = db.Kimlik.SingleOrDefault();
-            return View(db.Iletisim.SingleOrDefault());
+            ViewBag.MapsEmbedSrc = db.Iletisim.FirstOrDefault()?.MapsEmbedSrc;
+            return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Iletisim(string adsoyad=null, string email=null,string konu=null,string mesaj=null)
+        public ActionResult Iletisim(string adsoyad = null, string email = null, string konu = null, string mesaj = null)
         {
-            
-            if (adsoyad!=null && email!=null)
+
+            if (adsoyad != null && email != null)
             {
                 WebMail.SmtpServer = "smtp.gmail.com";
                 WebMail.EnableSsl = true;
@@ -84,13 +95,13 @@ namespace KurumsalWeb.Controllers
         {
             ViewBag.Kimlik = db.Kimlik.SingleOrDefault();
 
-            return View(db.Blog.Include("Kategori").OrderByDescending(x=>x.BlogId).ToPagedList(Sayfa,5));
+            return View(db.Blog.Include("Kategori").OrderByDescending(x => x.BlogId).ToPagedList(Sayfa, 5));
         }
         [Route("BlogPost/{kategoriad}/{id:int}")]
-        public ActionResult KategoriBlog(int id,int Sayfa=1)
+        public ActionResult KategoriBlog(int id, int Sayfa = 1)
         {
             ViewBag.Kimlik = db.Kimlik.SingleOrDefault();
-            var b = db.Blog.Include("Kategori").OrderByDescending(x=>x.BlogId).Where(x => x.Kategori.KategoriId == id).ToPagedList(Sayfa,5);
+            var b = db.Blog.Include("Kategori").OrderByDescending(x => x.BlogId).Where(x => x.Kategori.KategoriId == id).ToPagedList(Sayfa, 5);
             return View(b);
         }
         [Route("BlogPost/{baslik}-{id:int}")]
@@ -101,15 +112,15 @@ namespace KurumsalWeb.Controllers
             return View(b);
         }
 
-        public JsonResult YorumYap(string adsoyad,string eposta,string icerik, int blogid)
+        public JsonResult YorumYap(string adsoyad, string eposta, string icerik, int blogid)
         {
-            if (icerik ==null)
+            if (icerik == null)
             {
                 return Json(true, JsonRequestBehavior.AllowGet);
             }
-            db.Yorum.Add(new Yorum { AdSoyad = adsoyad, Eposta = eposta, Icerik = icerik, BlogId = blogid,Onay=false });
+            db.Yorum.Add(new Yorum { AdSoyad = adsoyad, Eposta = eposta, Icerik = icerik, BlogId = blogid, Onay = false });
             db.SaveChanges();
-          
+
             return Json(false, JsonRequestBehavior.AllowGet);
         }
 
@@ -117,12 +128,12 @@ namespace KurumsalWeb.Controllers
         {
             ViewBag.Kimlik = db.Kimlik.SingleOrDefault();
 
-            return PartialView(db.Kategori.Include("Blogs").ToList().OrderBy(x=>x.KategoriAd));
+            return PartialView(db.Kategori.Include("Blogs").ToList().OrderBy(x => x.KategoriAd));
         }
         public ActionResult BlogKayitPartial()
         {
 
-            return PartialView(db.Blog.ToList().OrderByDescending(x=>x.BlogId));
+            return PartialView(db.Blog.ToList().OrderByDescending(x => x.BlogId));
         }
 
         public ActionResult FooterPartial()
@@ -137,7 +148,7 @@ namespace KurumsalWeb.Controllers
 
             return PartialView();
         }
-        
-     
+
+
     }
 }
