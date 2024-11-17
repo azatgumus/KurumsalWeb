@@ -1,12 +1,160 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\git\\KurumsalWeb\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|d:\\git\\kurumsalweb\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|d:\\git\\kurumsalweb\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|d:\\git\\kurumsalweb\\views\\admin\\sifremiunuttum.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|solutionrelative:views\\admin\\sifremiunuttum.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|d:\\git\\kurumsalweb\\views\\hakkimizda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|solutionrelative:views\\hakkimizda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|d:\\git\\kurumsalweb\\views\\kimlik\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|solutionrelative:views\\kimlik\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|d:\\git\\kurumsalweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|d:\\git\\kurumsalweb\\controllers\\kimlikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|solutionrelative:controllers\\kimlikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|d:\\git\\kurumsalweb\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94E012AC-6484-453F-A579-D5347012E244}|KurumsalWeb.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\git\\KurumsalWeb\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "D:\\git\\KurumsalWeb\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-16T20:43:32.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\git\\KurumsalWeb\\Views\\Hakkimizda\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hakkimizda\\Index.cshtml",
+              "ToolTip": "D:\\git\\KurumsalWeb\\Views\\Hakkimizda\\Index.cshtml",
+              "RelativeToolTip": "Views\\Hakkimizda\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T20:43:09.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\git\\KurumsalWeb\\Views\\Kimlik\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Kimlik\\Index.cshtml",
+              "ToolTip": "D:\\git\\KurumsalWeb\\Views\\Kimlik\\Index.cshtml",
+              "RelativeToolTip": "Views\\Kimlik\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T20:39:49.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\git\\KurumsalWeb\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\git\\KurumsalWeb\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T20:36:52.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SifremiUnuttum.cshtml",
+              "DocumentMoniker": "D:\\git\\KurumsalWeb\\Views\\Admin\\SifremiUnuttum.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\SifremiUnuttum.cshtml",
+              "ToolTip": "D:\\git\\KurumsalWeb\\Views\\Admin\\SifremiUnuttum.cshtml",
+              "RelativeToolTip": "Views\\Admin\\SifremiUnuttum.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T20:36:44.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\git\\KurumsalWeb\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\git\\KurumsalWeb\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowCAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T20:27:54.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KimlikController.cs",
+              "DocumentMoniker": "D:\\git\\KurumsalWeb\\Controllers\\KimlikController.cs",
+              "RelativeDocumentMoniker": "Controllers\\KimlikController.cs",
+              "ToolTip": "D:\\git\\KurumsalWeb\\Controllers\\KimlikController.cs",
+              "RelativeToolTip": "Controllers\\KimlikController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T20:39:55.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\git\\KurumsalWeb\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\git\\KurumsalWeb\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T20:27:50.272Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

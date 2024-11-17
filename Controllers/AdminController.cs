@@ -1,11 +1,7 @@
-﻿
-using KurumsalWeb.Models;
-using KurumsalWeb.Models.DataContext;
+﻿using KurumsalWeb.Models.DataContext;
 using KurumsalWeb.Models.Model;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
 
@@ -16,7 +12,7 @@ namespace KurumsalWeb.Controllers
     
         KurumsalDBContext db = new KurumsalDBContext();
         // GET: Admin
-        [Route("yonetimpaneli")]
+        [Route("panel9823sdt")]
         public ActionResult Index()
         {
             ViewBag.BlogSay = db.Blog.Count();
@@ -27,7 +23,7 @@ namespace KurumsalWeb.Controllers
             var sorgu = db.Kategori.ToList();   
             return View(sorgu);
         }
-        [Route("yonetimpaneli/giris")]
+        [Route("panel9823sdt/giris")]
         public ActionResult Login()
         {
             return View();
@@ -35,7 +31,6 @@ namespace KurumsalWeb.Controllers
         [HttpPost]
         public ActionResult Login(Admin admin)
         {
-            
             var login = db.Admin.Where(x => x.Eposta == admin.Eposta).SingleOrDefault();
             if (login.Eposta==admin.Eposta && login.Sifre== Crypto.Hash(admin.Sifre, "MD5"))
             {
@@ -81,8 +76,6 @@ namespace KurumsalWeb.Controllers
                 WebMail.SmtpPort = 587;
                 WebMail.Send(eposta, "Admin Panel Giriş Şifreniz", "Şifreniz :" + yenisifre);
                 ViewBag.Uyari = "Şifreniz Başarı ile gönderilmiştir";
-
-                
             }
             else
             {
