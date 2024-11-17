@@ -48,7 +48,7 @@ namespace KurumsalWeb.Controllers
                 return RedirectToAction("Index"); 
         }
         
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int? id)
         {
             if (id==null)
             {

@@ -83,8 +83,8 @@ D:\git\KurumsalWeb\bin\EntityFramework.SqlServer.dll
 D:\git\KurumsalWeb\bin\System.Buffers.dll
 D:\git\KurumsalWeb\bin\System.Memory.dll
 D:\git\KurumsalWeb\bin\System.Numerics.Vectors.dll
-D:\git\KurumsalWeb\bin\System.Runtime.CompilerServices.Unsafe.dll
 D:\git\KurumsalWeb\bin\System.Text.Encoding.CodePages.dll
+D:\git\KurumsalWeb\bin\System.Runtime.CompilerServices.Unsafe.dll
 D:\git\KurumsalWeb\bin\EntityFramework.xml
 D:\git\KurumsalWeb\bin\EntityFramework.SqlServer.xml
 D:\git\KurumsalWeb\bin\System.Buffers.xml
