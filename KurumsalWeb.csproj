@@ -540,7 +540,6 @@
     <Content Include="Content\AdminLayout\img\chat-avatar2.jpg" />
     <Content Include="Content\AdminLayout\img\customSelect-arrow.gif" />
     <Content Include="Content\AdminLayout\img\geekslabs.png" />
-    <Content Include="Content\AdminLayout\img\Germany.png" />
     <Content Include="Content\AdminLayout\img\icons\line-icon-c.png" />
     <Content Include="Content\AdminLayout\img\icons\line-icon-hover.png" />
     <Content Include="Content\AdminLayout\img\icons\line-icon.png" />
